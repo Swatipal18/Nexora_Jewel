@@ -6,7 +6,7 @@ import axiosInstance from "../../../api/axiosInstance";
 import { TiPencil } from "react-icons/ti";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
-import styles from '../size/Size.module.css'
+import styles from '../Size/Size.module.css'
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { GoSortAsc, GoSortDesc } from "react-icons/go";
 import { useSearchParams } from "react-router-dom";
