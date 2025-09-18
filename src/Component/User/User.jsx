@@ -15,7 +15,7 @@ import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { GoSortAsc, GoSortDesc } from "react-icons/go";
 import axiosInstance from "../../api/axiosInstance";
 import { useSearchParams } from "react-router-dom";
-
+import Loader from "../pages/Loader/Loader";
 
 export default function User() {
   const [activeRow, setActiveRow] = useState(null);
@@ -469,11 +469,8 @@ export default function User() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
-
 
       {showCustomModal && (
         <div className={styles.modalOverlay}>
