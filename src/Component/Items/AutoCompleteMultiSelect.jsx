@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Form, Modal, Button } from "react-bootstrap";
-import styles from "./AddItem.module.css";
+import styles from "./Additem.module.css";
 import axiosInstance from "../../api/axiosInstance";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
