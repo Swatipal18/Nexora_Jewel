@@ -1,0 +1,174 @@
+.wrapper {
+  background-color: var(--white, #FFF3E3);
+  padding: 25px 40px;
+  border-radius: 10px;
+  border: 1px solid var(--text-black, #55142A);
+  width: 96%;
+}
+
+.formLinks {
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 120px;
+  /* ensures responsiveness */
+}
+
+.Dateinput {
+  width: 100%;
+  background-color: var(--white, #FFF3E3);
+   box-shadow: 0 4px 6px #71213c87;
+   border: 1px solid var(--text-black, #55142A) !important;
+}
+
+.input,
+.textarea,
+.select {
+  border-radius: 20px;
+  border: 1.5px solid var(--text-black, #55142A) !important;
+  font-size: 16px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px #71213c87;
+  background-color: var(--white, #FFF3E3);
+}
+
+.textarea {
+  height: 150px;
+  resize: none;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 7px 28px;
+  border-radius: 20px;
+  border: 1.5px solid var(--text-black, #55142A);
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-black, #55142A);
+   box-shadow: 0 4px 6px #71213c87;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: var(--text-black, #55142A);
+  color: var(--white, #FFF3E3);
+}
+
+.uploadBox {
+  margin-top: 46px;
+  background-color: var(--white, #FFF3E3);
+  border: 1.5px solid var(--text-black, #55142A);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 6px #71213c87;
+  height: 290px;
+}
+
+
+.uploadIcon {
+  color: var(--text-black, #55142A);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
+
+.selectButton {
+  margin-top: 19px;
+  padding: 6px 30px;
+  border-radius: 20px;
+  border: 1.5px solid var(--text-black, #55142A);
+  cursor: pointer;
+  background-color: var(--white, #FFF3E3);
+  font-weight: 600;
+  color: var(--text-black, #55142A);
+  box-shadow: 0 4px 6px #71213c87;
+}
+
+.fileInput {
+  display: none;
+}
+
+.submitWrapper {
+  width: 100%;
+}
+
+.submitBtn {
+  padding: 12px 30px;
+  background-color: var(--text-black, #55142A);
+  color: var(--white, #FFF3E3);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.previewContainer {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.previewImage {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--text-black, #55142A);
+  display: block;
+}
+
+.imagePreviewBox {
+  position: relative;
+  display: inline-block;
+  margin: 8px;
+}
+
+.deleteIcon {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+.deleteIcon:hover {
+  background: #b30000;
+}
+
+.selectedImageCount {
+  font-size: 18px;
+  margin-top: 8px;
+  color: var(--text-black, #55142A);
+  text-align: center;
+  font-weight: 500;
+}

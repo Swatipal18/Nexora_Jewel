@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+  --text-black: #55142A;
+  --light-black: #55142ac4;
+  --pagination-bg: #fde6c9ff;
+  --hover-gray: #FFF3E3;
+  --light-gray: #0000001F;
+  --white: #FFF3E3;
+  --dark-blue: #2C2955;
+  --yellow: #FACA00;
+  --increment-text: #BCE897;
+  --purple: #748BDC;
+  --decrement-text: #E17574;
+  --border-color: #55142A;
+  --text-header: #000000B3;
+  --detail-border: #70707080;
+  --dashboard-border: #00000080;
+}
+
+body {
+  background-color: var(--white, #FFF3E3) !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-black, #55142A);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+tr ul,
+td,
+table,
+option,
+small,
+label,
+select {
+  background-color: var(--white, #FFF3E3) !important;
+  color: var(--text-black, #55142A) !important;
+  margin: 0;
+  padding: 0;
+}
+
+select,
+option {
+  background-color: var(--white, #FFF3E3) !important;
+  color: var(--text-black, #55142A) !important;
+  border: 1px solid var(--text-black, #55142A) !important;
+  box-shadow: 0 4px 6px #71213c87;
+}
+
+/* App.css */
+
+.layout-container {
+  display: flex;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.sidebar-section {
+  transition: width 0.3s ease;
+}
+
+.sidebar--collapsed {
+  width: 70px;
+}
+
+.sidebar--expanded {
+  width: 220px;
+}
+
+.main-content-section {
+  flex-grow: 1;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}

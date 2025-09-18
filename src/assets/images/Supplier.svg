@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="21" viewBox="0 0 92 21">
+  <g id="Supplier_" data-name="Supplier " transform="translate(-43 -187)">
+    <text id="Supplier" transform="translate(72 204)" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Supplier</tspan></text>
+    <g id="Group_6" data-name="Group 6" transform="translate(41.5 184.75)">
+      <path id="Path_16" data-name="Path 16" d="M3.375,4.5A1.875,1.875,0,0,0,1.5,6.375V13.5h12V6.375A1.875,1.875,0,0,0,11.625,4.5ZM13.5,15H1.5v2.625A1.876,1.876,0,0,0,3.375,19.5H3.75a3,3,0,0,1,6,0h3a.75.75,0,0,0,.75-.75Z"/>
+      <path id="Path_17" data-name="Path 17" d="M8.25,19.5A1.5,1.5,0,1,0,6.75,21,1.5,1.5,0,0,0,8.25,19.5Zm7.5-12.75A.75.75,0,0,0,15,7.5V18.75a.755.755,0,0,0,.042.248A3,3,0,0,1,21,19.462a1.812,1.812,0,0,0,1.464-1.883,18.659,18.659,0,0,0-3.732-10.1,1.837,1.837,0,0,0-1.47-.725H15.75Z"/>
+      <path id="Path_18" data-name="Path 18" d="M19.5,19.5A1.5,1.5,0,1,0,18,21,1.5,1.5,0,0,0,19.5,19.5Z"/>
+    </g>
+  </g>
+</svg>

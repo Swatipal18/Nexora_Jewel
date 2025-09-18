@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="21" viewBox="0 0 80 21">
+  <g id="Orders" transform="translate(-43 -187)">
+    <text id="Orders-2" data-name="Orders" transform="translate(72 204)" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Orders</tspan></text>
+    <path id="Path_25" data-name="Path 25" d="M7.127,5.673v.7H5.285A1.739,1.739,0,0,0,3.555,7.925L2.384,19.052a1.739,1.739,0,0,0,1.729,1.92H18.486a1.739,1.739,0,0,0,1.729-1.92L19.044,7.925a1.739,1.739,0,0,0-1.729-1.557H15.472v-.7a4.173,4.173,0,1,0-8.345,0ZM11.3,2.891A2.782,2.782,0,0,0,8.518,5.673v.7h5.563v-.7A2.782,2.782,0,0,0,11.3,2.891Zm-2.782,7.65a2.782,2.782,0,0,0,5.563,0v-.7a.7.7,0,0,1,1.391,0v.7a4.173,4.173,0,1,1-8.345,0v-.7a.7.7,0,0,1,1.391,0Z" transform="translate(40.625 186.264)" fill-rule="evenodd"/>
+  </g>
+</svg>

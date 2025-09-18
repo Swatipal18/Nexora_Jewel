@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="139.061" height="21.595" viewBox="0 0 139.061 21.595">
+  <g id="Product_Tab" data-name="Product Tab" transform="translate(-43 -187)">
+    <text id="Items" transform="translate(72 204)" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Items</tspan></text>
+    <path id="Path_2" data-name="Path 2" d="M14.5,8.25l-5,5.1-5-5.1" transform="translate(166.5 188.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_23" data-name="Path 23" d="M11.6,1.594a.692.692,0,0,0-.7,0L2.942,6.237l8.308,4.846,8.308-4.846L11.6,1.594ZM20.25,7.435l-8.308,4.846v8.308l7.964-4.645a.692.692,0,0,0,.343-.6ZM10.558,20.589V12.282L2.25,7.435v7.911a.692.692,0,0,0,.343.6l7.964,4.646Z" transform="translate(40.75 188.005)"/>
+  </g>
+</svg>

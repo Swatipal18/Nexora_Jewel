@@ -1,0 +1,112 @@
+.wrapper {
+  background: var(--white, #FFF3E3);
+  padding: 3rem;
+}
+
+.tableResponsive {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+.tableResponsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tableResponsive::-webkit-scrollbar-thumb {
+  background-color: var(--white, #FFF3E3);
+  border-radius: 10px;
+}
+
+.whiteBox {
+  background-color: var(--white, #FFF3E3);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--text-black, #55142A) !important;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white, #FFF3E3);
+  min-width: 700px !important;
+}
+
+.table th {
+  background-color: var(--white, #FFF3E3) !important;
+  color: var(--text-blacks, #55142aa5) !important;
+  text-align: left;
+  font-size: 17px;
+  border-bottom: 1px solid var(--text-black, #55142A);
+  padding: 0.6rem;
+  font-weight: bold;
+}
+
+.table td {
+  padding: 0.6rem;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+.table tr:hover {
+  background-color: var(--white, #cdc2b4);
+  /* Light gray on hover */
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.actionBtn {
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--text-black, #55142A);
+  color: var(--white, #FFF3E3);
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modelOverlay {
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1001; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.4);
+}
+
+.Modelcontent {
+  background-color: var(--white, #FFF3E3);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.datepicker {
+  width: 300px;
+  padding: 4px;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+.btnApply {
+  padding: 3px 12px;
+  border-radius: 3px;
+  background-color: var(--text-black, #55142A);
+  color: white;
+  border: none;
+}
+
+.btnCancel {
+  padding: 3px 12px;
+  border-radius: 3px;
+  border: none;
+  background-color: #6c757d;
+  color: var(--text-black, #55142A);
+}

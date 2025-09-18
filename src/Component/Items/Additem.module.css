@@ -1,0 +1,421 @@
+.container {
+  background-color: var(--white, #FFF3E3) !important;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white, #FFF3E3) !important;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: sticky !important;
+  top: 119px !important;
+  z-index: 1000;
+}
+
+.headerButtons button {
+  margin-left: auto;
+  background-color: var(--text-black, #55142A) !important;
+  color: var(--white, #FFF3E3) !important;
+  border: none;
+  padding: 5px 20px;
+}
+
+.formContainer {
+  background-color: var(--white, #FFF3E3) !important;
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 8px;
+  border: 2px solid var(--text-black, #55142A);
+  padding-bottom: 70px;
+}
+
+.uploadBox {
+  background-color: var(--white, #FFF3E3) !important;
+  border: 2px solid var(--text-black, #55142A) !important;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.uploadBox:hover {
+  border-color: var(--white);
+}
+
+.uploadIcon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--text-black, #55142A);
+  z-index: 1;
+}
+
+.uploadNote {
+  font-size: 12px;
+  color: var(--text-black, #55142A);
+  z-index: 1;
+}
+
+.fileInput {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+
+.submitButton {
+  width: 200px;
+  margin-top: 10px;
+  background-color: var(--text-black, #55142A) !important;
+  color: var(--white, #FFF3E3) !important;
+  box-shadow: 0 4px 6px #71213c87;
+   border: none !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+Label {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.uploadBox p {
+  font-size: 20px;
+  color: var(--text-black, #55142A);
+}
+
+.formContainer input,
+.formContainer textarea,
+.formContainer select {
+  border: 1px solid var(--text-black, #55142A) !important;
+  background-color: var(--white, #FFF3E3) !important;
+  color: var(--text-black, #55142A) !important;
+  box-shadow: 0 4px 6px #71213c87;
+  font-weight: bold;
+}
+
+/* Extra Styling for Selected Image Preview */
+.selectedImagePreview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid  var(--text-black, #55142A);
+  margin-bottom: 9px;
+  z-index: 2;
+}
+
+.uploadThumbnails {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  overflow-x: auto !important;
+  flex-wrap: nowrap !important;
+  overflow-y: hidden;
+  padding: 5px;
+  border-radius: 8px;
+  z-index: 3;
+}
+
+.uploadThumbnails img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--text-black, #55142A);
+}
+
+.selectedImageCount {
+  font-size: 10px;
+  color: var(--text-black, #55142A);
+  text-align: left;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid  var(--text-black, #55142A);
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  background: var(--white, #FFF3E3);
+}
+
+.formContainer .input {
+  flex: 1;
+  border: none !important;
+  outline: none !important;
+  min-width: 150px;
+  font-weight: bold;
+  color: var(--text-black, #55142A);
+  background: transparent;
+}
+
+.chip {
+  background: var(--text-black, #55142A);
+  color: var(--white, #FFF3E3);
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.chipClose {
+  background: transparent;
+  border: none;
+  color: var(--white, #FFF3E3);
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+/* search in dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: var(--white, #FFF3E3);
+  border: 1px solid var(--text-black, #55142A);
+  box-shadow: 0 4px 6px #71213c87;
+  color: var(--text-black, #55142A);
+  z-index: 999;
+  border-radius: 4px;
+  max-height: 250px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownList {
+  overflow-y: auto;
+  max-height: 200px;
+  /* dropdown height minus button height */
+}
+
+.dropdownItem {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+
+.addButton {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--text-black, #55142A);
+  color: var(--white, #FFF3E3);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+
+
+.add-modal {
+  background-color: var(--white, #FFF3E3) !important;
+} 
+
+.modal-content {
+  border-radius: 16px;
+  background-color: var(--text-black, #55142A);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  /* Space between images */
+}
+
+.deleteButton {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: rgba(249, 4, 4, 1);
+  color: var(--white, #FFF3E3);
+  border: none;
+  padding: 0px 7px;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Delete button hover effect */
+
+.thumbnailContainer {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  flex: 0 0 auto !important;
+}
+
+.thumbnail {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+/* Styling for Thumbnails container */
+.uploadThumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.uploadThumbnails::-webkit-scrollbar {
+  height: 5px;
+}
+
+.uploadThumbnails::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+@media(max-width:780px) {
+  .add-modal {
+    margin-left: 400px;
+  }
+}
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.fullSizeImage {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.overlayClose {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2.5rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1060;
+}
+
+/* If you're using a CSS Module, name it e.g., FormGroup.module.css */
+.labelFixedWidth {
+  width: 240px;
+}
+
+.LabelData {
+  width: 110px;
+}
+
+@media (max-width: 992px) {
+
+  /* lg breakpoint */
+  .labelFixedWidth {
+    width: 200px;
+  }
+
+  .LabelData {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* md breakpoint */
+  .labelFixedWidth .LabelData {
+    width: 291px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* sm breakpoint */
+  .labelFixedWidth .LabelData {
+    width: 291px;
+  }
+}
+
+/* HTML: <div className="loader"></div> */
+
+.loaderOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* background: linear-gradient(to right, #c6c7c9, #85a3d8); */
+  background-color: rgba(6, 6, 6, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 150px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-right-color: #25b09b;
+  animation: l15 1s infinite linear;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: l15 2s infinite;
+}
+
+.loader::after {
+  margin: 8px;
+  animation-duration: 3s;
+}
+
+@keyframes l15 {
+  100% {
+    transform: rotate(1turn)
+  }
+}

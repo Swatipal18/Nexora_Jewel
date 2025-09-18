@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="21" viewBox="0 0 88 21">
+  <g id="Reports" transform="translate(-43 -187)">
+    <text id="Reports-2" data-name="Reports" transform="translate(72 204)" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Reports</tspan></text>
+    <g id="Group_3" data-name="Group 3" transform="translate(40.75 186.425)">
+      <path id="Path_9" data-name="Path 9" d="M2.25,12.717A7.467,7.467,0,0,1,9.717,5.25a.679.679,0,0,1,.679.679v6.11h6.11a.679.679,0,0,1,.679.679,7.467,7.467,0,1,1-14.935,0Z" transform="translate(0 -0.285)" fill-rule="evenodd"/>
+      <path id="Path_10" data-name="Path 10" d="M12.75,2.929a.679.679,0,0,1,.679-.679A7.467,7.467,0,0,1,20.9,9.717a.679.679,0,0,1-.679.679H13.429a.679.679,0,0,1-.679-.679Z" transform="translate(-0.996)" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

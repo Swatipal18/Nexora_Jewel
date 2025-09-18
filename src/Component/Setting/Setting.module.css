@@ -1,0 +1,100 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  margin-top: 50px;
+  background: var(--pagination-bg, #fde6c9ff);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--text-black, #55142A);
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--pagination-bg, #fde6c9ff);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-black, #55142A);
+  text-transform: uppercase;
+  background-color: var(--pagination-bg, #fde6c9ff) !important;
+}
+
+.inputGroup {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  color: var(--text-black, #55142A);
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border: 1px solid var(--text-black, #55142A);
+  background-color: var(--pagination-bg, #fde6c9ff);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--text-black, #55142A) !important;
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-black, #55142A);
+}
+
+.error {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #d9534f;
+}
+
+.submitBtn {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--text-black, #55142A);
+  color: var(--white, #FFF3E3);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+@media (max-width: 576px) {
+  .card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 200px;
+  background-color: var(--white, #FFF3E3) !important;
+  border-right: 2px solid var(--text-blacks, #55142a3e);
+  transition: width 0.3s ease;
+  /* position: -webkit-sticky;  */
+  overflow-y: auto;
+  /* overflow: hidden !important; */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 111111111;
+}
+
+.collapsed {
+  width: 70px;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 2px solid var(--text-blacks, #55142a3e);
+  position: sticky;
+  top: 0;
+  height: 120px;
+  z-index: 10004455;
+  background-color: var(--white, #FFF3E3) !important;
+}
+
+.toggleButton {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.logo {
+
+  margin-top: 12px;
+  margin-left: -9px;
+  height: 130px;
+}
+
+.menuContainer {
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.menuItem,
+.submenuLink {
+  display: flex;
+  align-items: center;
+  padding: 9px 20px;
+  color: var(--text-black, #55142A) !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  border-radius: 0 20px 0 0px;
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.activeTab {
+  background-color: var(--text-black, #55142A) !important;
+  color: var(--white, #FFF3E3) !important;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.chevron {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.label {
+  flex-grow: 1;
+}
+
+.dropdownMenu {
+  padding-left: 20px;
+  /* background: #fafafa; */
+}
+
+.openDropdown {
+  background-color: var(--text-black, #55142A) !important;
+  color: white !important;
+}
+
+.openDropdownMenu {
+  background-color: var(--text-black, #55142A) !important;
+}
+
+.menuItem {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s ease-in-out;
+
+}
+
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px !important;
+  margin-right: 10px;
+}
+
+.submenuLink {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--white, #FFF3E3) !important;
+  transition: background 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.activeSubTab {
+  background-color: var(--white, #FFF3E3) !important;
+  color: var(--text-black, #55142A) !important;
+}
+
+.sidebarSetting {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s ease-in-out;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  border-top: 1px solid #eee;
+  text-decoration: none;
+}
+
+.settingIcon {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .toggleButton {
+    font-size: 16px;
+  }
+}
+
+.addSpacingBelow {
+  margin-bottom: 12px;
+  /* ya jo spacing chahiye */
+}
+
+.addSpacingTop {
+  margin-top: 12px;
+  /* ya jo spacing chahiye */
+}
+
+.menuContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.menuContainer::-webkit-scrollbar-track {
+  background: transparent;
+  /* optional: track background transparent */
+}
+
+.menuContainer::-webkit-scrollbar-thumb {
+  background-color: #bab8b8;
+  /* scroll thumb color */
+  border-radius: 10px;
+  /* rounded scroll thumb */
+}
+
+.menuContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #4d4d4d;
+  /* hover par color change */
+}
