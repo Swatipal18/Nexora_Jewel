@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import styles from "./AddItem.module.css";
+import styles from "./Additem.module.css";
 import { Form, Row, Col, Button, InputGroup } from "react-bootstrap";
 import { HiMiniArrowUpOnSquare } from "react-icons/hi2";
 import axiosInstance from "../../api/axiosInstance";
