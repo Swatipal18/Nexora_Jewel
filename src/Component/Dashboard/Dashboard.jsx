@@ -184,7 +184,7 @@ export default function Dashboard() {
         name: item.title,
         value: item.totalSold,
         color: getRandomColor()
-      }));
+      })) || [];
 
       setCategoryData(formattedData);
     } catch (error) {
@@ -236,7 +236,7 @@ export default function Dashboard() {
   }, [])
 
 
-  const total = categoryData.reduce((acc, item) => acc + item.value, 0);
+  const total = categoryData?.reduce((acc, item) => acc + item.value, 0);
 
   const CustomLegend = () => (
     <div>
@@ -446,7 +446,7 @@ export default function Dashboard() {
                   <IoDownloadOutline className={styles.FilterIcon} />
                 </div>
               </div>
-              {categoryData.length > 0 && total > 0 ? (
+              {(categoryData && categoryData.length > 0 && total > 0) ? (
                 <div className="row">
                   <div className="col-sm-5">
                     <div className={styles.legendScroll}>
