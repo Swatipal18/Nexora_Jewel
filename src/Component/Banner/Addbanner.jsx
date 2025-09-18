@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import styles from "./Addbanner.module.css";
+import styles from "./AddBanner.module.css";
 import { FaUpload, FaTimes } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import axiosInstance from "../../api/axiosInstance";
