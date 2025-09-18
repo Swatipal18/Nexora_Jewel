@@ -8,6 +8,7 @@ import { FaSearch, FaTimes } from 'react-icons/fa';
 import { GoSortAsc, GoSortDesc } from 'react-icons/go';
 import { FaCircleChevronLeft, FaCircleChevronRight } from 'react-icons/fa6';
 import { HiAdjustmentsVertical } from 'react-icons/hi2';
+import Loader from '../pages/Loader/Loader';
 
 
 const tabs = ['pending', 'confirmed', 'processing', 'picked', 'shipped', 'delivered', 'cancelled'];
@@ -30,7 +31,7 @@ function Order() {
   const location = useLocation();
 
 
-  const[loading,Setloader]=useState(false)
+  const [loading, Setloader] = useState(false)
 
   const viewOrderId = location.state?.orderId || null;
   // console.log(' viewOrderId: ', viewOrderId);
@@ -61,7 +62,7 @@ function Order() {
         if (startDate) params.startDate = startDate;
         if (endDate) params.endDate = endDate;
       }
-      
+
       const response = await axiosInstance.get(`${baseUrl}/order/getAllOrders`, { params });
       // console.log(' response : ', response);
       setAllOrder(response.data.data.data);
@@ -69,7 +70,7 @@ function Order() {
       Setloader(false)
     } catch (error) {
       console.error("Failed to fetch orders with filter:", filterDto, error);
-    }finally{
+    } finally {
       Setloader(false)
     }
   }
@@ -270,7 +271,7 @@ function Order() {
             </div>
           )}
         </div>
-        <div className=" col-12 d-flex align-items-center mt-3 position-fixed p-2 ps-4 bottom-0" style={{ background: "var(--pagination-bg, #fde6c9ff)", zIndex: "999" }} >
+        <div className=" col-12 d-flex align-items-center mt-3 position-fixed p-2 ps-4 bottom-0" style={{ background: "var(--pagination-bg, #FFCCD5)", zIndex: "999" }} >
           <div className={styles.paginationInfo}>
             <span>Showing {orders.length} Of  {totalUsers} Order</span>
             <select
@@ -297,7 +298,7 @@ function Order() {
             </button>
 
             <span className={styles.pageNumber}>{currentPage}</span>
-{/*  */}
+            {/*  */}
             <button
               onClick={() =>
                 setCurrentPage((prev) =>
@@ -313,10 +314,8 @@ function Order() {
 
         </div>
       </div>
-  {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+      {loading && (
+        <Loader />
       )}
 
     </>

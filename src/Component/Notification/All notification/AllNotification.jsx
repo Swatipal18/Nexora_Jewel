@@ -7,6 +7,7 @@ import axiosInstance from '../../../api/axiosInstance';
 import Swal from 'sweetalert2';
 import { FaCircleChevronLeft, FaCircleChevronRight } from 'react-icons/fa6';
 import { toast } from 'react-toastify';
+import Loader from '../../pages/Loader/Loader';
 
 export default function AllNotification() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -220,9 +221,7 @@ export default function AllNotification() {
         </div>
       </div >
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
     </>
   )

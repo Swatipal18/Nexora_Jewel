@@ -4,6 +4,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { IoPrint } from 'react-icons/io5';
 
 import axiosInstance from '../../../api/axiosInstance';
+import Loader from '../../pages/Loader/Loader';
 
 
 function Pending({ orders, getOrder, expandRequest }) {
@@ -242,9 +243,7 @@ function Pending({ orders, getOrder, expandRequest }) {
         </table>
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+       <Loader />
       )}
     </>
   );

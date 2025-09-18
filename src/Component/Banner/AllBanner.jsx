@@ -5,6 +5,7 @@ import axiosInstance from "../../api/axiosInstance";
 import { toast } from "react-toastify";
 import Swal from 'sweetalert2';
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
+import Loader from "../pages/Loader/Loader";
 
 export default function AllBanner() {
   const navigate = useNavigate();
@@ -109,13 +110,13 @@ export default function AllBanner() {
             + New Add
           </button>
           <select className={`form-select w-auto ${styles.dropdown} `} value={targetAreaFilter}
-          style={{
-            backgroundColor: 'var(--white, #FFF3E3)',
-            color: 'var(--text-black, #55142A)',
-            border: '1px solid var(--light-black, #55142ac4)',
-            borderRadius: '4px',
-            padding: '5px 10px',
-          }}
+            style={{
+              backgroundColor: 'var(--white, #FFF3E3)',
+              color: 'var(--text-black, #55142A)',
+              border: '1px solid var(--light-black, #55142ac4)',
+              borderRadius: '4px',
+              padding: '5px 10px',
+            }}
             onChange={(e) => {
               setTargetAreaFilter(e.target.value);
               setCurrentPage(1);
@@ -303,9 +304,7 @@ export default function AllBanner() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
     </>
   );

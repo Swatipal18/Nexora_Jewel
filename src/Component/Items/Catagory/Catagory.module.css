@@ -323,11 +323,38 @@ input:checked+.slider:before {
   background-color: var(---whites, #fde6c9ff);
 }
 
+.paginationInfo {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+
+}
+
+.paginationInfo span {
+  color: var(--text-black, #55142A);
+}
+
+.dropdown {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--text-black, #55142A);
+  background-color: var(--white, #FFF3E3);
+  font-weight: 500;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--pagination-bg, #FFCCD5) !important;
+}
+
 .pageBtn {
   border: none !important;
   color: var(--text-black, #55142A);
   transition: 0.2s ease;
-  background-color: var(--whites, #fde6c9ff) !important;
+  background-color: var(--pagination-bg, #FFCCD5) !important;
 }
 
 .pageBtn:disabled {
@@ -342,7 +369,7 @@ input:checked+.slider:before {
 }
 
 .pageBtn :global(svg) {
-  background-color: var(--whites, #fde6c9ff) !important;
+  background-color: var(--pagination-bg, #FFCCD5) !important;
   font-size: 25px;
   margin-left: 10px;
 }

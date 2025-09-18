@@ -178,14 +178,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: var(---whites, #fde6c9ff);
+  background-color: var(--pagination-bg, #FFCCD5) !important;
 }
 
 .pageBtn {
   border: none !important;
   color: var(--text-black, #55142A);
   transition: 0.2s ease;
-  background-color: var(--whites, #fde6c9ff) !important;
+  background-color: var(--pagination-bg, #FFCCD5) !important;
 }
 
 .pageBtn:disabled {
@@ -200,7 +200,7 @@
 }
 
 .pageBtn :global(svg) {
-  background-color: var(--whites, #fde6c9ff) !important;
+  background-color: var(--pagination-bg, #FFCCD5) !important;
   font-size: 25px;
   margin-left: 10px;
 }

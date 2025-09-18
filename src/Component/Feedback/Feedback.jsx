@@ -4,6 +4,7 @@ import axiosInstance from '../../api/axiosInstance';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 import { FaCircleChevronLeft, FaCircleChevronRight } from 'react-icons/fa6';
 import { GoSortAsc, GoSortDesc } from 'react-icons/go';
+import Loader from '../pages/Loader/Loader';
 
 export default function Feedback() {
 
@@ -193,9 +194,7 @@ export default function Feedback() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
     </>
   );

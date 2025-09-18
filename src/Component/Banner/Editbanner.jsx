@@ -416,9 +416,7 @@ export default function Editbanner() {
       )}
 
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <img src="/images/ZyraBlackSVG-01.png" alt="" style={{ height: "50%", width: "50%", color: "white" }} className={styles.loaderImage} />
-        </div>
+        <Loader />
       )}
     </>
   );

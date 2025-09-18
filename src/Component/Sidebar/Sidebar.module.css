@@ -11,9 +11,7 @@
   background-color: var(--white, #FFF3E3) !important;
   border-right: 2px solid var(--text-blacks, #55142a3e);
   transition: width 0.3s ease;
-  /* position: -webkit-sticky;  */
   overflow-y: auto;
-  /* overflow: hidden !important; */
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -31,22 +29,36 @@
   border-bottom: 2px solid var(--text-blacks, #55142a3e);
   position: sticky;
   top: 0;
-  height: 120px;
+  min-height: 120px;
+  max-height: 120px;
   z-index: 10004455;
   background-color: var(--white, #FFF3E3) !important;
+  justify-content: flex-start;
+}
+
+.collapsed .topBar {
+  justify-content: left;
+  padding: 12px 0px !important;
 }
 
 .toggleButton {
   font-size: 20px;
   cursor: pointer;
   margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* Adjust toggle button margin when collapsed */
+.collapsed .toggleButton {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .logo {
-
   margin-top: 12px;
   margin-left: -9px;
   height: 130px;
+  flex-shrink: 0;
 }
 
 .menuContainer {
@@ -68,7 +80,6 @@
   transition: background 0.3s ease;
   border-radius: 0 20px 0 0px;
   margin-right: 10px;
-  /* margin-bottom: 10px; */
 }
 
 .activeTab {
@@ -92,7 +103,6 @@
 
 .dropdownMenu {
   padding-left: 20px;
-  /* background: #fafafa; */
 }
 
 .openDropdown {
@@ -110,7 +120,6 @@
   display: flex;
   align-items: center;
   transition: background 0.2s ease-in-out;
-
 }
 
 .dropdownMenu {
@@ -159,12 +168,10 @@
 
 .addSpacingBelow {
   margin-bottom: 12px;
-  /* ya jo spacing chahiye */
 }
 
 .addSpacingTop {
   margin-top: 12px;
-  /* ya jo spacing chahiye */
 }
 
 .menuContainer::-webkit-scrollbar {
@@ -173,17 +180,13 @@
 
 .menuContainer::-webkit-scrollbar-track {
   background: transparent;
-  /* optional: track background transparent */
 }
 
 .menuContainer::-webkit-scrollbar-thumb {
   background-color: #bab8b8;
-  /* scroll thumb color */
   border-radius: 10px;
-  /* rounded scroll thumb */
 }
 
 .menuContainer::-webkit-scrollbar-thumb:hover {
   background-color: #4d4d4d;
-  /* hover par color change */
 }

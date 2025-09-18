@@ -6,6 +6,7 @@ import { MdDelete } from "react-icons/md";
 import axiosInstance from "../../api/axiosInstance";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import Loader from "../pages/Loader/Loader";
 
 export default function Addbanner() {
   const { register, handleSubmit } = useForm();
@@ -348,8 +349,8 @@ export default function Addbanner() {
         <div className="d-flex flex-wrap align-items-center gap-3 mt-3">
 
           <button type="submit" className="btn  ms-auto"
-          style={{backgroundColor:"var(--button-bg, #55142A)", color:"white", borderRadius:"5px", padding:"8px 20px", border:"none"}}
-          disabled={loading}>{loading ? "Submitting..." : "Add Banner"}</button>
+            style={{ backgroundColor: "var(--button-bg, #55142A)", color: "white", borderRadius: "5px", padding: "8px 20px", border: "none" }}
+            disabled={loading}>{loading ? "Submitting..." : "Add Banner"}</button>
         </div>
       </form>
 
@@ -363,9 +364,7 @@ export default function Addbanner() {
         </div>
       )}
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
     </>
   );

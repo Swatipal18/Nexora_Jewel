@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { GoSortAsc, GoSortDesc } from "react-icons/go";
 import { useSearchParams } from "react-router-dom";
+import Loader from "../../pages/Loader/Loader";
 
 export function Catagory() {
   const { register, handleSubmit, reset, setValue, watch, control } = useForm();
@@ -621,9 +622,7 @@ export function Catagory() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+       <Loader />
       )}
 
 

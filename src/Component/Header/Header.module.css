@@ -87,6 +87,11 @@
   justify-content: flex-end;
 }
 
+.notification{
+  padding: 2px 7px;
+  color: var(--white, #FFF3E3);
+  margin-left: 20px;
+}
 .signOutBtn {
   display: flex;
   align-items: center;

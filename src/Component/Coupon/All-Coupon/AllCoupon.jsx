@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import { toast } from 'react-toastify';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import axiosInstance from '../../../api/axiosInstance';
+import Loader from '../../pages/Loader/Loader';
 
 
 export default function AllCoupon() {
@@ -291,9 +292,7 @@ export default function AllCoupon() {
         </div>
       </div >
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
 
 

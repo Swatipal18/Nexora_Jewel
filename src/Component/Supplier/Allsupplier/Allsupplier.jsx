@@ -8,6 +8,7 @@ import Swal from 'sweetalert2';
 import { toast } from 'react-toastify';
 import { FaCircleChevronLeft, FaCircleChevronRight } from 'react-icons/fa6';
 import { GoSortAsc, GoSortDesc } from 'react-icons/go';
+import Loader from '../../pages/Loader/Loader';
 
 export default function Allsupplier() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -353,7 +354,7 @@ export default function Allsupplier() {
         </div>
       </div>
 
-      <div className=" col-12 d-flex align-items-center mt-3 position-fixed p-2 ps-4 bottom-0" style={{ background: " var(--pagination, #fde6c9ff)" }} >
+      <div className=" col-12 d-flex align-items-center mt-3 position-fixed p-2 ps-4 bottom-0" style={{ background: " var(--pagination-bg, #fde6c9ff)" }} >
         <div className={styles.paginationInfo}>
           <span>Showing {data.length} Of {totalUsers} Supplier</span>
           <select
@@ -396,9 +397,7 @@ export default function Allsupplier() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
 
       {showSidebar && selectedSupplier && (

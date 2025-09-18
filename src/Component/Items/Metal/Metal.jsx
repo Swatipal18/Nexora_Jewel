@@ -10,6 +10,7 @@ import styles from '../Size/Size.module.css'
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { GoSortAsc, GoSortDesc } from "react-icons/go";
 import { useSearchParams } from "react-router-dom";
+import Loader from "../../pages/Loader/Loader";
 
 export default function Metal() {
   const { register, handleSubmit, reset, setValue, watch } = useForm();
@@ -258,9 +259,7 @@ export default function Metal() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
     </>
   )

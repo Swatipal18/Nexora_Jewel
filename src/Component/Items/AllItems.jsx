@@ -11,6 +11,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BsExclamationOctagon } from 'react-icons/bs';
+import Loader from '../pages/Loader/Loader';
 
 export default function AllItems() {
   const navigate = useNavigate();
@@ -499,10 +500,7 @@ export default function AllItems() {
         </div>
       )}
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-
-        </div>
+        <Loader />
       )}
     </>
   )

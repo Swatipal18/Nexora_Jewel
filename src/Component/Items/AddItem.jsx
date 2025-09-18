@@ -8,6 +8,7 @@ import AutoCompleteMultiSelect from "./AutoCompleteMultiSelect";
 
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import Loader from "../pages/Loader/Loader";
 
 
 export function AddItem() {
@@ -829,7 +830,7 @@ export function AddItem() {
                   placeholder="Enter item code"
                 />
                 <Button
-                  style={{whiteSpace: "nowrap", backgroundColor: 'var(--text-black, #55142A)', color: 'var(--white, #FFF3E3)', boxShadow: '0 4px 6px #71213c87',  border:'none'}}
+                  style={{ whiteSpace: "nowrap", backgroundColor: 'var(--text-black, #55142A)', color: 'var(--white, #FFF3E3)', boxShadow: '0 4px 6px #71213c87', border: 'none' }}
                   onClick={fetchItemDetails}
                 >
                   Fetch
@@ -1648,10 +1649,7 @@ export function AddItem() {
         </Row>
       </Form>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-
-        </div>
+        <Loader />
       )}
     </div>
 

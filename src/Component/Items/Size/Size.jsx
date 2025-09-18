@@ -10,6 +10,7 @@ import styles from './Size.module.css'
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 import { GoSortAsc, GoSortDesc } from "react-icons/go";
 import { useSearchParams } from "react-router-dom";
+import Loader from "../../pages/Loader/Loader";
 export default function Size() {
   const { register, handleSubmit, reset, setValue, watch } = useForm();
   const [searchParams] = useSearchParams();
@@ -196,7 +197,7 @@ export default function Size() {
             </div>
             <div className="d-flex gap-3">
               <div onClick={toggleSortOrder} className={styles.sortIcon}>
-              {sortOrder === "ASC" ? <GoSortAsc title="Sort Ascending" /> : <GoSortDesc title="Sort Descending" />}
+                {sortOrder === "ASC" ? <GoSortAsc title="Sort Ascending" /> : <GoSortDesc title="Sort Descending" />}
 
               </div>
               {/* <button className={styles.filterBtn}>Filter</button> */}
@@ -278,9 +279,7 @@ export default function Size() {
 
       </div>
       {loading && (
-        <div className={styles.loaderOverlay}>
-          <div className={styles.loader}></div>
-        </div>
+        <Loader />
       )}
     </>
   );
