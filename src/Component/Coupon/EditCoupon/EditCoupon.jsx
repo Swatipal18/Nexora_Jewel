@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import styles from '../../supplier/Supplier.module.css';
+import styles from '../../Supplier/Supplier.module.css';
 import { toast } from 'react-toastify';
 import axiosInstance from '../../../api/axiosInstance';
 
