@@ -38,13 +38,13 @@ import Support from '../Component/Support/Support';
 import Invoice from '../Component/Invoice management/Invoice';
 
 // ✅ Protected Route Logic
-const ProtectedRoute = () => {
-  const authToken = localStorage.getItem('authToken');
-  if (!authToken) {
-    return <Navigate to="/" replace />;
-  }
-  return <Outlet />;
-};
+// const ProtectedRoute = () => {
+//   const authToken = localStorage.getItem('authToken');
+//   if (!authToken) {
+//     return <Navigate to="/" replace />;
+//   }
+//   return <Outlet />;
+// };
 
 export default function Router() {
   const routes = createHashRouter([
